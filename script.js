@@ -1,20 +1,21 @@
 // Example: Simple alert on page load
 window.onload = function() {
-  console.log("Website loaded!");
   
   const images = [
-	"C:/Users/kashu/Desktop/NakhraWakhra/Images/sister.jpg",
-	"C:/Users/kashu/Desktop/NakhraWakhra/Images/karwaWomen.jpg",
-	"C:/Users/kashu/Desktop/NakhraWakhra/Images/karwachauth.jpg"
+		NAKHRA_WAKHRA + "/Images/sister.jpg",
+		NAKHRA_WAKHRA + "/Images/karwaWomen.jpg",
+		NAKHRA_WAKHRA + "/Images/karwachauth.jpg"
 	];
 
 	let index = 0;
 	let rotate = true;
 	
 	const slideshow = document.getElementById("slideshow");
-
-	// change image every 5 second
+	const logo = document.getElementById("logo");
 	
+	// change image every 5 second
+	logo.src = NAKHRA_WAKHRA + "/Images/NakhraWakhraLogo.png"
+	slideshow.src = NAKHRA_WAKHRA + "/Images/sister.jpg",
 	setInterval(() => 
 	{
 		if (rotate)
